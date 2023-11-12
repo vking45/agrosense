@@ -4,13 +4,14 @@ import ViewScreen from './screens/viewScreen';
 import NotificationsScreen from './screens/notificationScreen';
 import Header from './components/header';
 import NavBar from './components/navbar';
+import ControlScreen from './screens/controlScreen';
 
 export default function App() {
   return (
     <SafeAreaView style={styles.safeArea}>
       <ScrollView style={styles.container}>
         <Header />
-        <ViewScreen />
+        <ControlScreen />
       </ScrollView>
         <NavBar />
     </SafeAreaView>
