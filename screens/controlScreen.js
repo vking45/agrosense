@@ -1,6 +1,10 @@
 import React from 'react';
 import { SafeAreaView, ScrollView, StyleSheet, View } from 'react-native';
 import DeviceControlCard from '../components/deviceControl';
+import ventilation from '../assets/ventilation.png';
+import fan from '../assets/fan.png';
+import sprinkler from '../assets/sprinkler.png';
+import bulb from '../assets/light.png';
 
 const ControlScreen = () => {
   return (
@@ -8,24 +12,24 @@ const ControlScreen = () => {
       <ScrollView style={styles.container}>
         <View style={styles.cardsContainer}>
           <DeviceControlCard
-            deviceName="Fans"
-            deviceCount="3"
+            deviceName="A/Cs"
             initialState={true} // Assuming the "Fans" are on by default
+            icon={fan}
           />
           <DeviceControlCard
             deviceName="Sprinkler"
-            deviceCount="1"
             initialState={false} // Assuming the "Sprinkler" is off by default
+            icon={sprinkler}
           />
           <DeviceControlCard
             deviceName="Lights"
-            deviceCount="4"
             initialState={false} // Assuming the "Lights" are off by default
+            icon={bulb}
           />
           <DeviceControlCard
             deviceName="Ventilation"
-            deviceCount="2"
             initialState={true} // Assuming the "Ventilation" is on by default
+            icon={ventilation}
           />
           {/* Add a component or button here for "New device" */}
         </View>
@@ -41,7 +45,7 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
-    backgroundColor: '#13283c' // Replace with your preferred background color
+    backgroundColor: '#13283c', // Replace with your preferred background color
   },
   cardsContainer: {
     flexDirection: 'row',
