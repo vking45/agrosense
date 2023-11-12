@@ -37,14 +37,14 @@ const NotificationsScreen = () => {
 const styles = StyleSheet.create({
   screenContainer: {
     flex: 1,
-    backgroundColor: '#000', // Replace with your background color
+    backgroundColor: '#13283c', // Replace with your background color
   },
   notificationsContainer: {
     flex: 1,
   },
   screenTitle: {
     fontSize: 24,
-    color: '#fff', // Replace with your title color
+    color: '#fefffe', // Replace with your title color
     marginVertical: 10,
     marginLeft: 10,
   },

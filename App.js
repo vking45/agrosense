@@ -10,7 +10,7 @@ export default function App() {
     <SafeAreaView style={styles.safeArea}>
       <ScrollView style={styles.container}>
         <Header />
-        <NotificationsScreen />
+        <ViewScreen />
       </ScrollView>
         <NavBar />
     </SafeAreaView>
@@ -20,10 +20,10 @@ export default function App() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#000' // Replace with your preferred background color
+    backgroundColor: '#13283c' // Replace with your preferred background color
   },
   container: {
     flex: 1,
-    backgroundColor: '#000' // Replace with your preferred background color
+    backgroundColor: '#13283c' // Replace with your preferred background color
   },
 });

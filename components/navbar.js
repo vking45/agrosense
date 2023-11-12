@@ -1,25 +1,27 @@
 import React from 'react';
 import { View, StyleSheet, TouchableOpacity, Image } from 'react-native';
-import icon from '../assets/icon.png';
+import home from '../assets/home.png';
+import config from '../assets/config.png';
+import control from '../assets/control.png'
 
 const NavBar = () => {
   return (
     <View style={styles.navContainer}>
       <TouchableOpacity>
         <Image
-          source={icon} // Replace with your icon path
+          source={home} // Replace with your icon path
           style={styles.navIcon}
         />
       </TouchableOpacity>
       <TouchableOpacity>
         <Image
-          source={icon} // Replace with your icon path
+          source={config} // Replace with your icon path
           style={styles.navIcon}
         />
       </TouchableOpacity>
       <TouchableOpacity>
         <Image
-          source={icon} // Replace with your icon path
+          source={control} // Replace with your icon path
           style={styles.navIcon}
         />
       </TouchableOpacity>
@@ -31,12 +33,15 @@ const styles = StyleSheet.create({
   navContainer: {
     flexDirection: 'row',
     justifyContent: 'space-around',
-    paddingVertical: 10,
-    backgroundColor: '#0f1e2c' // Replace with your navbar background color
+    paddingTop: 20,
+    backgroundColor: '#13283c', // Replace with your navbar background color
+    borderTopWidth: 1,
+    borderTopColor: '#fff'
   },
   navIcon: {
-    width: 24,
-    height: 24
+    padding: 5,
+    width: 30,
+    height: 30
   }
 });
 

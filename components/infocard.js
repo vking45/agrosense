@@ -18,11 +18,12 @@ const styles = StyleSheet.create({
   cardContainer: {
     flex: 1,
     alignItems: 'center',
+    width: '45%', 
     justifyContent: 'center',
     margin: 10,
     padding: 20,
     borderRadius: 10,
-    backgroundColor: '#333' // Replace with your card background color
+    backgroundColor: '#0f1e2c' // Replace with your card background color
   },
   cardIcon: {
     width: 30,
@@ -31,11 +32,11 @@ const styles = StyleSheet.create({
   },
   cardValue: {
     fontSize: 22,
-    color: '#fff' // Replace with your value color
+    color: '#fefffe' // Replace with your value color
   },
   cardLabel: {
     fontSize: 14,
-    color: '#aaa' // Replace with your label color
+    color: '#808285' // Replace with your label color
   }
 });
 

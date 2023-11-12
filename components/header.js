@@ -1,18 +1,19 @@
 import React from 'react';
 import { View, Text, Image, StyleSheet } from 'react-native';
-import icon from '../assets/icon.png';
+import notif from '../assets/notif.png'
+import mush from '../assets/mushroom.png'
 
 const Header = () => {
   return (
     <View style={styles.headerContainer}>
       <Image
         style={styles.avatar}
-        source={icon} // Replace with your image path
+        source={mush} // Replace with your image path
       />
-      <Text style={styles.locationName}>Agrosense</Text>
+      <Text style={styles.locationName}>Mushsense</Text>
       <Image
         style={styles.settingsIcon}
-        source={icon} // Replace with your settings icon path
+        source={notif} // Replace with your settings icon path
       />
     </View>
   );
@@ -24,7 +25,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'space-between',
     padding: 20,
-    backgroundColor: '#000' // Replace with your header background color
+    backgroundColor: '#13283c' // Replace with your header background color
   },
   avatar: {
     width: 40,

@@ -22,15 +22,15 @@ const styles = StyleSheet.create({
     backgroundColor: 'transparent'
   },
   weatherIcon: {
-    width: 100,
-    height: 100
+    width: 50,
+    height: 50
   },
   temperatureText: {
-    fontSize: 48,
+    fontSize: 36,
     color: '#fff' // Replace with your temperature color
   },
   weatherDescription: {
-    fontSize: 18,
+    fontSize: 14,
     color: '#fff' // Replace with your description color
   }
 });

@@ -11,29 +11,31 @@ const ViewScreen = () => {
       <ScrollView style={styles.container}>
         <WeatherDisplay
           temperature="24°C"
-          description="Partly Cloudy"
-          icon={require('../assets/icon.png')} // Replace with actual path to weather icon
+          description="In-Range"
+          icon={require('../assets/temp.png')} // Replace with actual path to weather icon
         />
         <View style={styles.cardsContainer}>
           <InfoCard
-            icon={require('../assets/icon.png')} // Replace with actual path to CO2 icon
-            value="19°C"
+            icon={require('../assets/co2.png')} // Replace with actual path to CO2 icon
+            value="82%"
             label="CO2"
           />
           <InfoCard
-            icon={require('../assets/icon.png')} // Replace with actual path to humidity icon
-            value="81%"
+            icon={require('../assets/humidity.png')} // Replace with actual path to humidity icon
+            value="92%"
             label="Humidity"
           />
+        </View>
+        <View style={styles.cardsContainer}>
           <InfoCard
-            icon={require('../assets/icon.png')} // Replace with actual path to soil moisture icon
-            value="19°C"
+            icon={require('../assets/soil.png')} // Replace with actual path to soil moisture icon
+            value="62%"
             label="Soil Moisture"
           />
           <InfoCard
-            icon={require('../assets/icon.png')} // Replace with actual path to lightning icon
+            icon={require('../assets/light.png')} // Replace with actual path to lightning icon
             value="1.54"
-            label="Lightning"
+            label="Lighting"
           />
         </View>
       </ScrollView>
@@ -48,12 +50,14 @@ const styles = StyleSheet.create({
   },
   container: {
     flex: 1,
+    paddingTop: 30,
     backgroundColor: '#13283c' // Replace with your preferred background color
   },
   cardsContainer: {
     flexDirection: 'row',
     flexWrap: 'wrap',
-    justifyContent: 'space-around'
+    justifyContent: 'space-between',
+    paddingHorizontal: 10,
   }
 });
 
