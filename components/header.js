@@ -1,9 +1,9 @@
 import React from 'react';
-import { View, Text, Image, StyleSheet } from 'react-native';
+import { View, Text, Image, StyleSheet, Button, Pressable } from 'react-native';
 import notif from '../assets/notif.png'
 import mush from '../assets/mushroom.png'
 
-const Header = () => {
+const Header = ({refresh}) => {
   return (
     <View style={styles.headerContainer}>
       <Image
@@ -11,10 +11,13 @@ const Header = () => {
         source={mush} // Replace with your image path
       />
       <Text style={styles.locationName}>Mushsense</Text>
+      
+      <Pressable onPress={refresh}>
       <Image
         style={styles.settingsIcon}
         source={notif} // Replace with your settings icon path
       />
+      </Pressable>
     </View>
   );
 };
